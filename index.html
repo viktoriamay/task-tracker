@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Task Tracker</h1>
+      <div class="tasks__columns">
+        <div>
+          <h2>Задачи</h2>
+          <div id="taskList"></div>
+        </div>
+        <div>
+          <h2>Корзина</h2>
+          <div id="trashList"></div>
+        </div>
+      </div>
+      <input type="text" id="taskInput" />
+
+      <button onclick="createTask()">Создать</button>
+      <button id="deleteButton" onclick="deleteSelected()">Удалить</button>
+      <button onclick="showTrash()">Корзина</button>
+      <input type="checkbox" id="selectAll" onchange="selectAllTasks()" />
+      Выбрать все
+    </main>
+  </body>
+</html>
